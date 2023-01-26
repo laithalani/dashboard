@@ -17,7 +17,7 @@ const Sidebar = ({children}) => {
 
   return (
     <div className='flex'>
-        <div className='fixed w-20 h-screen p-4 bg-white border-r-[1px] flex flex-col justify-between'>
+        <div className='fixed sm:w-20 w-14 h-screen p-4 bg-white border-r-[1px] flex flex-col justify-between'>
             <div className='flex flex-col items-center'>
                 <Link href='/'>
                     <div className='bg-cyan-600 text-white p-3 rounded inline-block'>
@@ -35,7 +35,7 @@ const Sidebar = ({children}) => {
                 ))}
             </div>
         </div>
-        <main className='ml-20 w-full'>{children}</main>
+        <main className='ml-14 w-full sm:ml-20'>{children}</main>
     </div>
   )
 }

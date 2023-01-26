@@ -13,7 +13,7 @@ const customers = () => {
         <div className='w-full m-auto p-4 border rounded-lg bg-white overflow-y-auto'>
           <div className='my-3 p-2 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer'>
             <span>Name</span>
-            <span>Email</span>
+            <span className='text-right sm:text-left'>Email</span>
             <span className='hidden md:grid'>Last Order</span>
             <span className='hidden sm:grid'>Method</span>
           </div>
@@ -24,9 +24,9 @@ const customers = () => {
                   <div className='bg-purple-100 p-3 rounded-lg'>
                 <BsPersonFill className='text-blue-500' />
                   </div>
-                  <p className='pl-4'>{order.name.first + ' ' + order.name.last}</p>
+                  <p className='pl-4 text-sm'>{order.name.first + ' ' + order.name.last}</p>
                 </div>
-                <p className='text-gray-600 lowercase'>{order.name.first}@gmail.com</p>
+                <p className='text-gray-600 lowercase text-sm text-right sm:text-left'>{order.name.first}@gmail.com</p>
                 <p className='hidden md:flex'>{order.date}</p>
                 <div className='hidden sm:flex justify-between items-center'>
                 <p>{order.method}</p>
